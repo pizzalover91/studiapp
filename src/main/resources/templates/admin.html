@@ -1,0 +1,97 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring3-3.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Studiapp - Vorlesungsverschiebungen</title>
+<link href="../static/css/bootstrap.css" th:href="@{/css/bootstrap.css}" rel="stylesheet" media="screen"/>
+</head>
+
+	<title>Studiapp</title>
+    <link href="../static/css/template.css"
+          th:href="@{/css/template.css}" rel="stylesheet" media="screen"/>
+
+        <noscript>
+            <style type="text/css">
+                /* Noscript Slider */
+                body .body .accordion-body.collapse {
+                    height: auto;
+                }
+                body .body .accordion-group.panel {
+                    margin-bottom: 4rem;
+                }
+                /* Carousel CK */
+                .carouselck > * {
+                    visibility: hidden;
+                }
+                .carouselck {
+                    background-image: url(/images/flexheader/parent1274.jpg);
+                    z-index: -1;
+                }
+
+            </style>
+        </noscript>
+    </head>
+
+    <body class="site com_content  frontpage view-article no-layout no-task itemid-3958 fluid">
+        <span class="mobile-top-block"></span>
+        <!-- Body -->
+        <div class="body" id="body">
+            <div class="container-fluid">
+                <!-- Header -->
+                <header class="header" role="banner">
+                    <div class="header-inner clearfix">
+                        
+
+<div class="custom logo pull-left"  >
+
+	<p><a href="/" class="site-title">
+		  <img src="../static/images/indexImg.jpg" width="900"
+             th:src="@{/images/thd_403x70.jpg}"/></p></div>
+
+                        <a class="brand pull-left" href="/">
+                            <span class="site-title" title="Technische Hochschule Deggendorf">Technische Hochschule Deggendorf</span>                                                    </a>
+                        <div class="pull-right">
+                            <div class="table-row">
+                                <div class="header-paintbox not-mobile table-cell pull-right">
+                                    		<div class="moduletable">
+	
+	
+                                </div>
+                            </div>
+                           <!-- 
+						<div class="mod-languages">
+    
+							            <ul class="lang-inline">
+							            <li class="lang-active" dir="ltr"><a href="/de/">de</a></li><li class="" dir="ltr"><a href="/en/">en</a></li></ul></div>
+
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </header>
+                <!--<div id="pre-navigation"></div>-->
+                
+        
+              
+                <nav class="navigation" role="navigation" th:include="menu::menu"></nav>
+                
+                  
+                                <div class="banner-container row-fluid">
+                    		<div class="moduletable">
+			<div>
+				<p>	 
+	  				<img src="../static/images/indexImg.jpg" th:src="@{/images/stud.jpg}"/>
+	            </p>
+             </div>
+             
+             <div id="messagebox">
+                <div class="container-fluid"><h2 th:text="${title}">Titel</h2></div>
+				<div class="container-fluid"><p th:text="${message}">Nachricht</p></div>
+             </div>
+    </body>
+</html>
