@@ -1,0 +1,1 @@
+Hibernate: select vorlesungs0_.id as id1_1_, vorlesungs0_.fach as fach2_1_, vorlesungs0_.prof as prof3_1_, vorlesungs0_.terminnew as terminne4_1_, vorlesungs0_.terminold as terminol5_1_ from vorlesungsverschiebung vorlesungs0_
